@@ -1,0 +1,76 @@
+my_age=24
+weight=60.2
+is_legal=True
+
+#print(my_age)
+my_name = 'Gustavo'
+text = 'Hola yo soy ' + my_name
+text2 = '{} Yo tengo {} años'.format(text, my_age)
+text3 = "Hola mama soy  %s , tengo %i y estoy gordito porque peso %.1f" % (my_name, my_age, weight)
+
+#print(my_name.upper())
+#print(my_name.lower())
+#print('Hola mi nombre es ' + my_name)
+#print(text3)
+
+#print(my_name[-1])
+#print(len(my_name))
+
+#if not my_age < 18 :
+  #print('Vamonos a beber 🍻')
+
+beers = [
+  'Minerva',
+  'Indio',
+  'Victoria',
+  'León',
+  'Modelo',
+  'Sapporo',
+  'Param'
+]
+
+#print(beers)
+#beers.append('Heineken')
+#chela = beers.pop(0)
+#chela2 = beers.remove('León')
+#print(chela)
+#print(chela2)
+#print(beers)
+
+#for item in beers:
+  #print(item)
+
+#def multiply(a, b):
+  #return a * b
+
+numbers = [1,2,3]
+squared_numbers = [numero**2 for numero in numbers]
+
+#for n in numbers:
+  #squared_numbers.append(n**2)
+
+print(squared_numbers)
+
+#upper_beers = [beer.upper() for beer in beers]
+#print(upper_beers)
+
+#m_beers = [beer for beer in beers if beer [0]=='M']
+#print (m_beers)
+
+lista = [
+  [1,2,3],
+  ['a','b','c'],
+  [1,2,3],
+  ['a','b','c'],
+  [1,2,3],
+  ['a','b','c'],
+]
+
+lista1 =[]
+for l in lista:
+  for e in l:
+    lista1.append(e)
+print(lista1) 
+
+lista2 = [e for l in lista for e in l]
+print(lista2)
